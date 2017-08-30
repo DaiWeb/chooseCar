@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.section{
+	width: 1300px;
+	margin: 0 auto;
+}
+.tit{
+	margin:20px 0 0 83px;
+	color: #1f1f1f;
+	font-size: 36px;
+	font-weight: 700;
+}
+.seaMode{
+	margin: 30px 0 0 113px;
+}
+.seaMode li{
+	display: inline-block;
+	width: 100px;
+	color:#1F1F1F;
+	font-size: 20px;
+	font-weight: 700;
+	width: 100px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.choose{
+	width: 1140px;
+	margin: 30px 0 0 113px;
+	display: none;
+}
+#condition{
+	display: block;
+}
+#conditionBtn{
+	color:#FFFFFF;
+	background: #FF6000;
+}
+
+.firstLetter{
+	display: inline-block;
+	margin: 0 10px;
+	color: #1F1F1F;
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+}
+#hot{
+	color: #FF6000;
+}
+.brandName {
+	width: 1140px;
+	margin-top: 30px;
+	display: none;
+}
+#hotBrand{
+	display: block;
+}
+.brandName div{
+	margin: 0 20px 20px 10px;
+	width:50px;
+	float: left;
+	text-align: center;
+	height: 100px;
+}
+.clearfix{
+	display: table;
+	clear: both;
+	content: "";
+}
+.clearfix:hover{
+	*zoom: 0;
+}
+.brandBtn a{
+	color: #555;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+}
+.brandBtn a:hover{
+	text-decoration: underline;
+	color:#FF6000 ;
+}
+.brandBtn img{
+	width: 50px;
+	height: 50px;
+}
+
+.showSea{
+	width:1140px;
+	margin: 30px auto;
+}
+.motorcycle{
+	width: 240px;
+	margin: 0 20px 30px 20px;
+	float: left;
+
+}
+.detail a{
+	text-decoration: none;
+	color: #999;
+	font-size: 12px;
+	background: url(../img/icon/next.png) no-repeat 0 2px;
+	padding-left:12px ;
+}
+.carTitle a{
+	text-decoration: none;
+	color: #1F1F1F;
+	font-size: 16px;
+	font-weight: 700;
+	
+}
+.motorcycle a:hover{
+	color: #FF6000;
+}
+
+/*条件查找框样式*/
+.fl{
+	float: left;
+}
+.configures{
+	width: 1140px;
+
+}
+#limousine,#suves{
+	display: none;
+}
+#limousine li,#suves li{
+	list-style: none;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin: 5px 0;
+}
+#limLevel{
+	width: 100px;
+	position: relative;
+	background: url(../img/icon/2_4.png) no-repeat 80px 8px;
+	
+}
+#limLevel a{
+	text-decoration: none;
+	color: #1F1F1F;
+}
+#suvLevel a{
+	text-decoration: none;
+	color: #1F1F1F;
+}
+#suvLevel{
+	width: 100px;
+	position: relative;
+	background: url(../img/icon/2_4.png) no-repeat 80px 8px;
+}
+
+.tit5{
+	color: #999999;
+	font-weight: 700;
+}
+.options span:nth-of-type(n+1){
+	display: inline-block;
+	margin:0 5px;
+	padding: 3px;
+	height: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.options span:nth-of-type(2){
+	background: #FF6000;
+	color: #FFFFFF;
+}
+.options{
+	margin: 0 0 15px;
+}
+.optRight{
+	margin-left:60px ;
+	position: relative;
+}
+.optRight div:nth-of-type(2){
+	position: relative;
+	left: -16px;
+}
+#lowPrice,#highPrice{
+	width: 40px;
+	height: 20px;
+}
+#inputPrice{
+	width: 40px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	background: #FF6000;
+	border:none;
+	color: #FFFFFF;
+}
+.configure span{
+	display: inline-block;
+	width: 120px;
+	margin: 0 20px 15px 10px;
+
+}
+.configureTitle{
+	margin: 0 8px;
+	width:40px;
+}
+.configure{
+	width:1050px ;
+}
