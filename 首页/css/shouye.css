@@ -1,0 +1,274 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.all{
+	width: 100%;
+	height:130px;
+	width:expression(document.body.header >= 1366? "1366px": "auto");
+    min-width:1366px;
+	background: rgba(0,0,0,0.7);
+	position:absolute;
+	z-index:10;
+	
+	
+		
+}
+.header{
+	width: 1366px;
+	height: 130px;
+	margin: 0 auto;
+	padding: 0 50px 0;
+	box-sizing: border-box;
+	position: relative;
+
+}
+#logo{
+	margin-left: 50px;
+}
+.ser{
+	position: absolute;
+	right:494px;
+	top: 30px;
+}
+.ser input:first-child{
+	padding-left: 15px;
+	width: 328px;
+	height: 28px;
+	background: #fff;
+	border:1px solid #ff6000;
+	position: absolute;
+	left: 0;
+	outline: none;
+}
+.ser input:last-child{
+	height: 30px;
+	width: 60px;
+	background: #ff6000;
+	border: none;
+	position: absolute;
+	left:330px ;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+.nav{
+	width: 400px;
+	height: 20px;
+	position: absolute;
+	right:98px;
+	bottom: 30px;
+}
+.nav li{
+	display: inline-block;
+	list-style: none;
+}
+.nav a{
+	text-decoration: none;
+	color: white;
+	margin: 0 6px;
+}
+.nav a:hover{
+	color: #ff6000;
+}
+.banner{
+top: 0px;
+width:100%;
+position:absolute;
+z-index:;
+}
+.pic img{
+  width:100%;
+}
+.t1{
+	position:absolute
+	height: 40px;
+	width: 35px;
+	line-height: 40px;
+	border: 1px solid $#FF6000;
+	border-radius: 20px;
+	margin-top:-168px;
+	margin-left: 600px;
+	
+}
+.t1 input{
+	height: 40px;
+	width: 120px;
+	line-height: 40px;
+	border: 2px solid #FF6000;
+	border-radius: 20px;
+	background: rgba(255,255,255,0);
+	color: #FF6000;
+	cursor: pointer;
+	outline: none;
+	
+}
+
+.vehicles{
+	width: 1200px;
+	top: 80px;
+	left: 10px;
+	height: 420px;
+	position:relative;
+	margin: 0 auto;
+	box-shadow:  1px 2px 30px #666;
+	background: white;
+	
+}
+
+.pinpai{
+	position: absolute;
+	left: 320px;
+	
+	
+}
+.text1{
+	margin-top: 10px;
+	
+}
+
+.pinpai ul{
+	margin-top: -30px;
+	margin-left: 80px;
+}
+.pinpai li{
+	display:  inline-block;
+	padding: 10px;
+}
+.pinpai li a{
+	color: #666;
+}
+.pinpai li a:hover{
+	color: #FF6000;
+}
+.pinpai span{
+	color: #FF6000;
+}
+.chexin{
+	position: absolute;
+	top: -30px;
+	left: 100px;
+}
+.chexin1{
+	top: 80px;
+	left: 50px;
+	position: absolute;
+    
+	
+}
+.chexin1 li{
+	display:  inline-block;
+	padding: 25px;
+}
+.lunbo {
+	position: absolute;
+	left: 480px;
+	top: 260px;
+}
+.huodong{
+	top: 60px;
+	height: 250px;
+	width: 1366px;
+	background: red;
+	position: relative;
+	margin: 30px auto;
+	background: url(../img/活动.png)no-repeat;
+}
+.more{
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+.zixun{
+	position: relative;
+	width: 1366px;
+	height: 625px;
+	margin: 0 auto;
+}
+.zximg{
+	position: absolute;
+	left: 175px;
+}
+
+.center{
+	position: absolute;
+	width: 1200px;
+	height: 470px;
+	/*background: yellow;*/	
+	left: 85px;
+	top:90px
+}
+.center_l{
+	width: 481px;
+	height: 500px;
+	background: url(../img/maiche.png)no-repeat;
+	box-shadow: 1px 10px 30px #666;
+	
+}
+.center_l:hover{
+	transition-duration:1s;
+	transform:translateY(-30px);
+	transition-timing-function:ease-in-out;
+}
+.chakan{
+	height: 40px;
+	width: 100px;
+	line-height: 40px;
+	border:2px solid #FF6000;
+	color: #FF6000;
+	background: rgba(255,255,255,0);
+	border-radius: 20px;
+	font-weight: 900;
+	font-size: 18px;
+	outline: none;
+	margin-top: 210px;
+	margin-left: 45px;
+}
+.center_r_t{
+	width: 680px;
+	height: 230px;
+	background: url(../img/奥迪.png)no-repeat;
+	position: absolute;
+	top:0px;
+	right: 0;
+	box-shadow: 1px 10px 30px #666;
+	
+}
+.center_r_t:hover{
+	transition-duration:1s;
+	transform:translateY(-30px);
+	transition-timing-function:ease-in-out;
+}
+.baodian{
+	position: absolute;
+	left: -15px;
+}
+.center_r_f{
+	width: 680px;
+	height: 230px;
+	position: absolute;
+	box-shadow: 1px 10px 30px #666;
+	background: url(../img/大众.png)no-repeat;
+	bottom: 0;
+	right: 0px;
+}
+.center_r_f:hover{
+	transition-duration:1s;
+	transform:translateY(-30px);
+	transition-timing-function:ease-in-out;
+}
+.wz{
+	position: absolute;
+	left: -15px;
+}
