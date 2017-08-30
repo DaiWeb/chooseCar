@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+html, body { height: 100%; }
+img { color: transparent; font-size: 0; vertical-align: middle; -ms-interpolation-mode: bicubic; }
+.hero-wrap ol, .hero-wrap ul { list-style: none; }
+.hero-wrap li { display: list-item; }
+body { background: url(../img/bg.png) no-repeat; background-size:100% 100%;}
+
+.clearfix:before, .clearfix:after { content: '.'; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; width: 0; height: 0; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.icon-arrow-a-left { background: url(../img/right.png) 200px 0px no-repeat; }
+.icon-arrow-a-right { background: url(../img/light.png) no-repeat; }
+.icon-arrow-a-left { background-position: 0 0; height: 120px; width: 60px; }
+.icon-arrow-a-right { background-position: 0 0; height: 120px; width: 60px; }
+.x{position: absolute;top:20px;left: 810px;z-index:999;}
+
+
+
+#main{overflow: hidden;}
+
+
+
+#index_b_hero { width: 852px; height: 648px; margin: auto; position: relative; top: 30px;}
+    #index_b_hero img { width: 842px; height: 560px; }
+    #index_b_hero .heros { width: 1210x; height: 410px; }
+    #index_b_hero .hero-wrap { overflow: visible; position: absolute; }
+    #index_b_hero .next, #index_b_hero .prev { filter: alpha(Opacity=70); opacity: .7; position: absolute; top: 50%; margin-top: -100px; margin-left: 5px; background-color: #303030; z-index: 3; }
+    #index_b_hero .next:hover, #index_b_hero .prev:hover { background-color:#FF6000; }
+    #index_b_hero .next { margin: -100px 5px 0 0; right: 0; }
+    #index_b_hero .disabled { background-color: #eee; }
+    #index_b_hero .mask-left, #index_b_hero .mask-right, #index_b_hero .hero { background: #fff; padding: 5px; z-index: 1; position: absolute; top: 0; left: 0; width: 842px; height: 560px; overflow: hidden; left: 1704px; }
+    #index_b_hero .mask-right, #index_b_hero .mask-left { z-index: 4; left: -852px; filter: alpha(Opacity=50); opacity: .01; background: #fff; overflow: hidden; }
+    #index_b_hero .mask-right { left: 852px; }
+    #index_b_hero .active { z-index: 2; left: 0; }

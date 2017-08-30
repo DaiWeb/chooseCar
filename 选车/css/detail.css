@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.section{
+	width: 1300px;
+	margin: 0 auto;
+}
+.tit{
+	margin:20px 0 0 83px;
+	color: #1f1f1f;
+	font-size: 36px;
+	font-weight: 700;
+}
+#carname{
+	margin: 20px 83px 0 0;
+	text-align: right;
+	font-size: 30px;
+}
+.cartype{
+	margin:20px 0 0 83px;
+	width: 1140px;
+}
+label{
+	color: #555rr;
+}
+.cartype h2{
+	margin: 10px 0;
+}
+.cType{
+	display: inline-block;
+	width: 200px;
+}
+.typeList{
+	position: relative;
+	width: 1140px;
+	margin: 30px auto;
+	border-bottom: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+}
+.comments{
+	width:300px ;
+	height: 40px;
+	position: absolute;
+	top: -40px;
+	right: 0;
+}
+.comments span{
+	display: inline-block;
+	width: 70px;
+	padding-left: 20px;
+	line-height: 40px;
+	font-size: 12px;
+}
+.comments span:nth-of-type(1){
+	background: url(../img/icon/dian.png) no-repeat 5px 14px;
+}
+.comments span:nth-of-type(2){
+	background: url(../img/icon/quan.png) no-repeat 5px 14px;
+}
+.comments span:nth-of-type(3){
+	background: url(../img/icon/heng.png) no-repeat 5px 14px;
+}
+.detailName{
+	width: 285px;
+}
+.detailName div:nth-of-type(1){
+	height: 60px;
+	line-height: 60px;
+	font-weight:700;
+	padding-left: 5px;
+}
+.detailName div:nth-of-type(2){
+	height: 30px;
+	line-height: 30px;
+	font-weight:700;
+	padding-left: 5px;
+}
+.detailName div:nth-of-type(3){
+	height: 30px;
+	line-height: 30px;
+	font-weight:700;
+	padding-left: 5px;
+}
+.configure>div{
+	margin-left: 83px;
+}
+.detailBox h2{
+	padding-left: 60px;
+	padding-bottom: 15px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	background: url(../img/icon/open.png) no-repeat;
+	border-bottom: 1px solid #ccc;
+}
+.detailList li{
+	list-style: none;
+	padding: 10px 0 10px 5px;
+	border-bottom: 1px solid #ccc;
+}
+.detailList{
+	width:285px ;
+	display: none;
+}
+.detailBox{
+	margin-top:15px;
+	width: 1140px;
+}
+

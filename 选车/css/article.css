@@ -1,0 +1,43 @@
+.section{
+	width: 1140px;
+	margin: 0 auto;
+	
+}
+#thisId{
+	margin-top: 20px;
+	color: #999999;
+}
+#thisId a{
+	text-decoration: none;
+	color: #999999;
+	
+}
+#thisId span{
+	color: #555555;
+}
+.article{
+	width: 960px;
+	margin: 30px auto;
+	border: 2px solid #CCCCCC;
+	border-radius: 3px 3px 3px;
+	margin-bottom: 100px;
+}
+.article h1{
+	margin: 30px auto 10px;
+	text-align: center;
+}
+.articleMessage div{
+	display: inline-block;
+	margin-left: 60px;
+}
+.articleMessage{
+	text-align: center;
+}
+.artText{
+	width: 900px;
+	margin: 30px auto;
+}
+.articleImg{
+	margin: 20px auto;
+	text-align: center;
+}

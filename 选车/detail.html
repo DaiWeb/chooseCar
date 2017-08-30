@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/header.css"/>
+		<link type="text/css" rel="stylesheet" href="css/detail.css"/>
+		<link type="text/css" rel="stylesheet" href="css/footer.css"/>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<div class="top">
+				<img src="img/LOGO.png" id="logo"/>
+				<div class="ser" >
+					<input type="text" name="sercValue" placeholder="请输入感兴趣的品牌、车型" />
+					<input type="button" value="搜索" name="sercBut"/>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="../首页/shouye.html">首页</a></li>
+						<li><a href="choose.html#A">选车</a></li>
+						<li><a href="../资讯页/资讯页/资讯.html">资讯</a></li>
+						<li><a href="../活动/huodong.html">优惠活动</a></li>
+						<li><a href="#">APP下载</a></li>
+						<li><a href="../登录/denglu.html">登录/注册</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" >
+			<h1 class="tit">配置价格表</h1>
+			<h2 id="carname">新BMW 4系双门轿跑</h2>
+			<div id="cartype" class="cartype">
+				<h2>选择查看车型</h2>
+				<div class="cType"><input type="checkbox" name="BMW4X" class="BMW4X" id="BMW425i" value="425i  M运动套装*" /><label for="BMW425i"> 425i  M运动套装*</label></div>
+				<div class="cType"><input type="checkbox" name="BMW4X" class="BMW4X" id="BMW430i" value="430i  M运动套装*" /><label for="BMW430i"> 430i  M运动套装*</label></div>
+				<div class="cType"><input type="checkbox" name="BMW4X" class="BMW4X" id="BMW440i" value="440i xDrive  M运动套装*" /><label for="BMW440i"> 440i xDrive  M运动套装*</label></div>
+			</div>
+			<div class="typeList" id="typeList">
+				<div class="comments" id="comments">
+					<span>标准配置</span>
+					<span>选择配置</span>
+					<span>恕无法提供</span>
+				</div>
+				<div class="detailName" id="titTop">
+					<div>车型</div>
+					<div>价格</div>
+					<div>车友最低价</div>
+				</div>
+			</div>
+			<div class="configure">
+				<div id="basicParameter"  class="detailBox">
+					<h2 class="detailTit">基本参数</h2>
+					<div class="detailList" id="basicParameterList">
+						<ul>
+							<li>厂商</li>
+							<li>级别</li>
+							<li>上市时间</li>
+							<li>发动机</li>
+							<li>进气形式</li>
+							<li>最大马力</li>
+							<li>最大扭矩</li>
+							<li>变速箱</li>
+							<li>车身类型</li>
+							<li>长*宽*高</li>
+							<li>轴距</li>
+							<li>最高车速</li>
+							<li>官方0-100km/h加速(s)</li>
+							<li>官方100-0km/h制动(s)</li>
+							<li>工信部油耗(L/100km)</li>
+							<li>整车质保</li>
+						</ul>
+					</div>
+				</div>
+				<div id="bodyParameter" class="detailBox">
+					<h2 class="detailTit">车身参数</h2>
+					<div class="detailList" id="bodyParameterList">
+						<ul>
+							<li>长度</li>
+							<li>宽度</li>
+							<li>高度</li>
+							<li>轴距</li>
+							<li>前轮距</li>
+							<li>后轮距</li>
+							<li>最小离地间隙</li>
+							<li>整备质量</li>
+							<li>车身结构</li>
+							<li>车门数(门)</li>
+							<li>座位数(个)</li>
+							<li>邮箱容积</li>
+							<li>行李箱容积</li>
+						</ul>
+					</div>
+				</div>
+				<div id="engine" class="detailBox">
+					<h2 class="detailTit">发动机</h2>
+					<div class="detailList" id="engineList">
+					<ul>
+						<li>发动机型号</li>
+						<li>排量(ml)</li>
+						<li>排量(L)</li>
+						<li>进气形式</li>
+						<li>气缸排列形式</li>
+						<li>气缸数(个)</li>
+						<li>每缸气门数(个)</li>
+						<li>压缩比</li>
+						<li>配汽机构</li>
+						<li>缸径(mm)</li>
+						<li>行程(mm)</li>
+						<li>最大马力(Ps)</li>
+						<li>最大功率(KW)</li>
+						<li>最大功率转速(rpm)</li>
+						<li>最大扭矩(N*m)</li>
+						<li>最大扭矩转速(rpm)</li>
+						<li>燃料形式</li>
+						<li>燃油标号</li>
+						<li>供油方式</li>
+						<li>缸盖材料</li>
+						<li>缸体材料</li>
+						<li>环保标准</li>
+					</ul>
+					</div>
+				</div>
+				<div id="gearbox" class="detailBox">
+					<h2 class="detailTit">变速箱</h2>
+					<div class="detailList" id="gearboxList">
+					<ul>
+						<li>简称</li>
+						<li>档位个数</li>
+						<li>变速箱类型</li>
+					</ul>
+					</div>
+				</div>
+				<div id="chasis" class="detailBox">
+					<h2 class="detailTit">底盘转向</h2>
+					<div class="detailList" id="chasisList">
+					<ul>
+						<li>驱动方式</li>
+						<li>前悬架类型</li>
+						<li>后悬架类型</li>
+						<li>助力类型</li>
+						<li>车体结构</li>
+					</ul>
+					</div>
+				</div>
+				<div id="braking" class="detailBox">
+					<h2 class="detailTit">车轮制动</h2>
+					<div class="detailList" id="brakingList">
+					<ul>
+						<li>前制动器类型</li>
+						<li>后制动器类型</li>
+						<li>驻车制动类型</li>
+						<li>前轮胎规格</li>
+						<li>后轮胎规格</li>
+						<li>备胎规格</li>
+					</ul>
+					</div>
+				</div>
+				<div id="safety" class="detailBox">
+					<h2 class="detailTit">主/被动安全装备</h2>
+					<div class="detailList" id="safetyList">
+					<ul>
+						<li>主/副驾驶座安全气囊</li>
+						<li>前后排侧气囊</li>
+						<li>前后排头部气囊(气帘)</li>
+						<li>膝部气囊</li>
+						<li>胎压监测装置</li>
+						<li>零胎压继续行驶</li>
+						<li>安全带未系提示</li>
+						<li>儿童座椅接口</li>
+						<li>ABS防抱死</li>
+						<li>制动力分配(EBD/CBC等)</li>
+						<li>刹车辅助(EBA/BAS/BA等)</li>
+						<li>牵引力控制(ASR/TCS/TRC等)</li>
+						<li>车身稳定控制(ESC/ESP/DSC等)</li>
+						<li>并线辅助</li>
+						<li>车道偏离预警系统</li>
+						<li>主动刹车/主动安全系统</li>
+						<li>夜视系统</li>
+						<li>疲劳驾驶提示</li>
+					</ul>
+					</div>
+				</div>
+				<div id="Holding" class="detailBox">
+					<h2 class="detailTit">辅助/操控配置</h2>
+					<div class="detailList" id="HoldingList">
+					<ul>
+						<li>前后注册雷达</li>
+						<li>倒车视频影像</li>
+						<li>全景摄像头</li>
+						<li>定速巡航</li>
+						<li>自适应巡航</li>
+						<li>自动泊车入库</li>
+						<li>发动机启停技术</li>
+						<li>上坡辅助</li>
+						<li>自动驻车</li>
+						<li>陡坡缓降</li>
+						<li>可变悬架</li>
+						<li>空气悬架</li>
+						<li>电磁感应悬架</li>
+						<li>可变转向比</li>
+						<li>前桥限滑差速器/差速锁</li>
+						<li>中央差速器锁止功能</li>
+						<li>后桥限滑差速器/差速锁</li>
+						<li>整体主动转向系统</li>
+					</ul>
+					</div>
+				</div>
+				<div id="outside" class="detailBox">
+					<h2 class="detailTit">外部/防盗配置</h2>
+					<div class="detailList" id="outsideList">
+					<ul>
+						<li>电动天窗</li>
+						<li>全景天窗</li>
+						<li>运动外观套件</li>
+						<li>铝合金轮圈</li>
+						<li>电动吸合门</li>
+						<li>侧滑门</li>
+						<li>电动后备箱</li>
+						<li>感应后配箱</li>
+						<li>车顶行李架</li>
+						<li>发动机电子防盗</li>
+						<li>车内中控锁</li>
+						<li>遥控钥匙</li>
+						<li>无钥匙启动系统</li>
+						<li>无钥匙进入系统</li>
+						<li>远程启动发动机</li>
+					</ul>
+					</div>
+				</div>
+				<div id="inside" class="detailBox">
+					<h2 class="detailTit">内部配置</h2>
+					<div class="detailList" id="insideList">
+					<ul>
+						<li>真皮方向盘</li>
+						<li>方向盘调节</li>
+						<li>方向盘电动调节</li>
+						<li>多功能方向盘</li>
+						<li>方向盘换挡</li>
+						<li>方向盘加热</li>
+						<li>方向盘记忆</li>
+						<li>行车电脑显示屏</li>
+						<li>全液晶仪表盘</li>
+						<li>HUD抬头数字显示</li>
+						<li>内置行车记录仪</li>
+						<li>主动降噪</li>
+						<li>手机无线充电</li>
+					</ul>
+					</div>
+				</div>
+				<div id="seat" class="detailBox">
+					<h2 class="detailTit">座椅配置</h2>
+					<div class="detailList" id="seatList">
+					<ul>
+						<li>座椅材质</li>
+						<li>运动风格座椅</li>
+						<li>座椅高低调节</li>
+						<li>腰部支撑调节</li>
+						<li>肩部支撑调节</li>
+						<li>主副驾驶座电动调节</li>
+						<li>第二排靠背角度调节</li>
+						<li>第二排座椅移动</li>
+						<li>后排座椅电动调节</li>
+						<li>副驾驶位后排可调节按钮</li>
+						<li>电动座椅记忆</li>
+						<li>前后排座椅加热</li>
+						<li>前后排座椅通风</li>
+						<li>前后排座椅按摩</li>
+						<li>第二排独立座椅</li>
+						<li>第三排座椅</li>
+						<li>后排座椅放倒方式</li>
+						<li>前后中央扶手</li>
+						<li>后排杯架</li>
+						<li>可加热/制冷杯架</li>
+					</ul>
+					</div>
+				</div>
+				<div id="multimedia" class="detailBox">
+					<h2 class="detailTit">多媒体配置</h2>
+					<div class="detailList" id="multimediaList">
+					<ul>
+						<li>GPS导航系统</li>
+						<li>定位互动服务</li>
+						<li>中控台彩色大屏</li>
+						<li>中控台彩色大屏尺寸</li>
+						<li>中控液晶屏分屏显示</li>
+						<li>蓝牙/车载电话</li>
+						<li>手机互联/映射</li>
+						<li>车联网</li>
+						<li>车载电视</li>
+						<li>后排液晶屏</li>
+						<li>220V/230V电源</li>
+						<li>外接音源借口</li>
+						<li>CD/DVD</li>
+						<li>扬声器品牌</li>
+						<li>扬声器数量</li>
+					</ul>
+					</div>
+				</div>
+				<div id="lighting" class="detailBox">
+					<h2 class="detailTit">灯光配置</h2>
+					<div class="detailList" id="lightingList">
+						<ul>
+							<li>近光灯</li>
+							<li>远光灯</li>
+							<li>LED日间行车灯</li>
+							<li>自适应远近光</li>
+							<li>自动头灯</li>
+							<li>转向辅助灯</li>
+							<li>转向头灯</li>
+							<li>前雾灯</li>
+							<li>大灯高度可调</li>
+							<li>大灯清洗装置</li>
+							<li>车内氛围灯</li>
+						</ul>
+					</div>
+				</div>
+				<div id="glass" class="detailBox">
+					<h2 class="detailTit">玻璃后视镜</h2>
+					<div class="detailList" id="glassList">
+						<ul>
+							<li>前/后电动车窗</li>
+							<li>车窗一键升降</li>
+							<li>车窗防夹手功能</li>
+							<li>防紫外线/隔热玻璃</li>
+							<li>后视镜电动调节</li>
+							<li>后视镜加热</li>
+							<li>内/外后视镜自动防眩目</li>
+							<li>流媒体车内后视镜</li>
+							<li>后视镜电动折叠</li>
+							<li>后视镜记忆</li>
+							<li>后风挡遮阳帘</li>
+							<li>后排侧遮阳帘</li>
+							<li>后排侧隐私玻璃</li>
+							<li>遮阳板化妆镜</li>
+							<li>后雨刷</li>
+							<li>感应雨刷</li>
+						</ul>
+					</div>
+				</div>
+				<div id="aircondition" class="detailBox">
+					<h2 class="detailTit">空调冰箱</h2>
+					<div class="detailList" id="airconditionList">
+						<ul>
+							<li>空调控制方式</li>
+							<li>后排独立空调</li>
+							<li>后座出风口</li>
+							<li>温度分区控制</li>
+							<li>车内空气调节</li>
+							<li>花粉过滤</li>
+							<li>车载空气净化器</li>
+							<li>车载冰箱</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- bottom开始  -->
+	 <div class="bottom">
+                             
+    
+		<div class="bot-l">
+            <ul class="botlink">
+            <li><a href="#">商家申请</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">加入我们</a></li>
+			<li><a href="#">帮助中心</a></li>
+			<li><a href="#">用户反馈</a></li>
+			</ul>
+            </div>
+
+			<div class="bot-r">
+            <img src="img/二维码.png"/>
+            </div>
+			<img src="img/line1.png" class="line1" />
+			<img src="img/line2.png" class="line2" />
+
+                <span class="friend">友情链接:</span>
+				<div class="hang1">                
+				<ul>
+                <li><a href="#">汽车之家</a></li>
+				<li><a href="#">北京车展</a></li>
+				<li><a href="#">广州车展</a></li>
+				<li><a href="#">成都车展</a></li>
+				<li><a href="#">平安保险</a></li>
+				<li><a href="#">凤凰汽车</a></li>
+				<li><a href="#">汽车之友</a></li>
+				<li><a href="#">新良汽车</a></li>
+				<li><a href="#">汽车探索网</a></li>
+				<li><a href="#">太平洋汽车</a></li>
+				<li><a href="#">中华汽车网</a></li>
+                </div>
+
+                <div class="hang2">
+				<li><a href="#">人民网汽车</a></li>
+				<li><a href="#">苹果园</a></li>
+				<li><a href="#">二手车之家</a></li>
+				<li><a href="#">爱卡汽车</a></li>
+				<li><a href="#">车城网</a></li>
+				<li><a href="#">网易汽车</a></li>
+				<li><a href="#">搜狐汽车</a></li>               
+				</ul>
+				</div>
+
+             
+             <div class="copy1"><p>Copyright@copy2015-2017 优选车ALL Rights Reserved版权所有 优选车(合肥)信息科技有限公司</p></div>
+             <div class="copy2"><p>皖ICP备15036207号-2 皖公安网备 31011402001229 皖通信管自贸 【2017】 4号 联系电话：0551-10106088</p></div>
+			 
+
+          </div>
+		
+<!-- bottom结束  -->
+	</body>
+	<script src="js/detail.js"></script>
+</html>

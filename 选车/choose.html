@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>选车页面</title>
+		<link type="text/css" rel="stylesheet" href="css/header.css" />
+		<link type="text/css" rel="stylesheet" href="css/section.css" />
+		<link type="text/css" rel="stylesheet" href="css/footer.css"/>
+	</head>
+
+	<body>
+		<div class="header" id="header">
+			<div class="top">
+				<img src="img/LOGO.png" id="logo" />
+				<div class="ser">
+					<input type="text" name="sercValue" placeholder="请输入感兴趣的品牌、车型" />
+					<input type="button" value="搜索" name="sercBut" />
+				</div>
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="../首页/shouye.html">首页</a>
+						</li>
+						<li>
+							<a href="#">选车</a>
+						</li>
+						<li>
+							<a href="../资讯页/资讯页/资讯.html">资讯</a>
+						</li>
+						<li>
+							<a href="../活动/huodong.html">优惠活动</a>
+						</li>
+						<li>
+							<a href="#">APP下载</a>
+						</li>
+						<li>
+							<a href="../登录/denglu.html">登录/注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<h1 class="tit">为你选车</h1>
+			<div class="seaMode">
+				<ul>
+					<li name="chooses" id="conditionBtn">您的条件</li>
+					<li name="chooses" id="brandBtn">品牌有你</li>
+				</ul>
+			</div>
+			<div class="choose" name="chooseBoxs" id="condition">
+				<!--
+                	作者：649318755@qq.com
+                	时间：2017-08-05
+                	描述：
+                <div id="selects">
+					<h3>筛选</h3>
+					<div id="selected"></div>
+				</div>
+				-->
+				<div class="clearfix">
+					<div class="options">
+						<span class="tit5">级别</span>
+						<span name="level" id="allLevel">全部</span>
+						<span name="level" id="limLevel"><a href="#" id="car">全部轿车</a>
+							<ul id="limousine">
+								<li name="limousine" id="allLimousine">全部轿车</li>
+								<li name="limousine" id="XSLimousine">微型轿车</li>
+								<li name="limousine" id="SLimousine">小型轿车</li>
+								<li name="limousine" id="MLimousine">紧凑型轿车</li>
+								<li name="limousine" id="LLimousine">中型轿车</li>
+								<li name="limousine" id="XLLimousine">大型轿车</li>
+							</ul>
+						</span>
+						<span name="level" id="suvLevel"><a href="#" id="suv">全部SUV</a>
+							<ul id="suves">
+								<li name="SUV" id="allSUV">全部SUV</li>
+								<li name="SUV" id="SSUV">小型SUV</li>
+								<li name="SUV" id="MSUV">紧凑型SUV</li>
+								<li name="SUV" id="LSUV">中型SUV</li>
+								<li name="SUV" id="XLSUV">大型SUV</li>
+							</ul>
+						 </span> 
+						<span name="level" id="mpvLevel">MPV</span>
+						<span name="level" id="paoLevel">跑车</span>
+						<span name="level" id="pikaLevel">皮卡</span>
+						<span name="level" id="mianLevel">微面</span>
+						<span name="level" id="keLevel">客车</span>
+						<span name="level" id="gangLevel">房车</span>
+					</div>
+					<div class="options">
+							<span class="tit5">价格</span>
+							<span name="price" id="allMoney">不限</span>
+							<span name="price" id="money_5">5万以下</span>
+							<span name="price" id="money_5_8">5-8万</span>
+							<span name="price" id="money_8_10">8-10万</span>
+							<span name="price" id="money_10_15">10-15万</span>
+							<span name="price" id="money_15_20">15-20万</span>
+							<span name="price" id="money_20_25">20-25万</span>
+							<span name="price" id="money_25_35">25-35万</span>
+							<span name="price" id="money_35_50">35-50万</span>
+							<span name="price" id="money_50_100">50-100万</span>
+							<span name="price" id="money_100">100万以上</span>
+							<input type="text" name="inputPrice" id="lowPrice" value="" />—
+							<input type="text" name="inputPrice" id="highPrice" value="" />
+							<input type="button" name="inputPrice" id="inputPrice" value="确定" />
+					</div>
+					
+					<div class="fl optLeft">
+						<div class="options">
+							<span class="tit5">排量</span>
+							<span name="output" id="allOutput">全部</span>
+							<span name="output" id="output_1.0">1.0L及以下</span>
+							<span name="output" id="output_1.1_1.6">1.1-1.6L</span>
+							<span name="output" id="output_1.7_2.0">1.7-2.0L</span>
+							<span name="output" id="output_2.1_2.5">2.1-2.5L</span>
+							<span name="output" id="output_2.6_3.0">2.6-3.0L</span>
+							<span name="output" id="output_3.1_4.0">3.1-4.0L</span>
+							<span name="output" id="output_4.0">4.0L以上</span>
+						
+						</div>
+						<div class="options">
+							<span class="tit5">能源</span>
+							<span name="energy" id="allEnergy">全部</span>
+							<span name="energy" id="gasoline">汽油</span>	
+							<span name="energy" id="diesel">柴油</span>
+							<span name="energy" id="motor-driven">电动</span>
+							<span name="energy" id="mixEnergy">混合动力</span>
+						</div>
+						<div class="options">
+							<span class="tit5">国别</span>
+							<span name="nation" id="allNation">全部</span>
+							<span name="nation" id="China">中国</span>
+							<span name="nation" id="USA">美国</span>
+							<span name="nation" id="Germany">德国</span>
+							<span name="nation" id="Japan">日本</span>
+							<span name="nation" id="Korea">韩国</span>
+							<span name="nation" id="elseNation">其他</span>
+						</div>
+					
+						<div class="options">
+						<span class="tit5">结构</span>
+							<span name="structure" id="allStructure">全部</span>
+							<span name="structure" id="structureTwo">两厢</span>
+							<span name="structure" id="structurethree">三厢</span>
+							<span name="structure" id="hatch-back">掀背</span>
+							<span name="structure" id="elseStructure">其他</span>
+						
+						</div>
+					</div>
+					<div class="fl optRight">
+						<div class="options">
+							<span class="tit5">驱动</span>
+							<span name="drive" id="allDrive">全部</span>
+							<span name="drive" id="befDrive">前驱</span>
+							<span name="drive" id="aftDrive">后驱</span>
+							<span name="drive" id="bothDrive">四驱</span>
+						</div>
+						<div class="options">
+							<span class="tit5">变速箱</span>
+							<span name="gearbox" id="allGear-box">全部</span>
+							<span name="gearbox" id="autoGear-box">自动</span>
+							<span name="gearbox" id="handGear-box">手动</span>
+						</div>
+						<div class="options">
+							<span class="tit5">产地</span>
+							<span name="adProduction" id="allAd-production">全部</span>
+							<span name="adProduction" id="import">进口</span>
+							<span name="adProduction" id="domestic">国产</span>
+						</div>
+						<div class="options">
+							<span class="tit5">座位</span>
+							<span name="seat" id="allSeat">全部</span>
+							<span name="seat" id="fiveSeat">5座</span>
+							<span name="seat" id="sevenSeat">7座</span>
+							<span name="seat" id="elseSeat">其他</span>
+						</div>
+					</div>
+					<div class="configures fl">
+						<div class="configureTitle fl" id="configure">
+							<span class="tit5">配置</span>
+						</div>
+						<div class="configure fl">
+							<span><input type="checkbox" id="configure1" name="configure" value="全景天窗" /><label for="configure1">全景天窗</label></span>
+							<span><input type="checkbox" id="configure2" name="configure" value="电动天窗" /><label for="configure2">电动天窗</label></span>
+							<span><input type="checkbox" id="configure3" name="configure" value="电动调节座椅" /><label for="configure3">电动调节座椅</label></span>
+							<span><input type="checkbox" id="configure4" name="configure" value="车身ESP" /><label for="configure4">车身ESP</label></span>
+							<span><input type="checkbox" id="configure5" name="configure" value="氙气大灯" /><label for="configure5">氙气大灯</label></span>
+							<span><input type="checkbox" id="configure6" name="configure" value="GPS导航" /><label for="configure6">GPS导航</label></span>
+							<span><input type="checkbox" id="configure7" name="configure" value="定速巡航" /><label for="configure7">定速巡航</label></span>
+							<span><input type="checkbox" id="configure8" name="configure" value="真皮座椅 " /><label for="configure8">真皮座椅 </label></span>
+							<span><input type="checkbox" id="configure9" name="configure" value="倒车雷达" /><label for="configure9">倒车雷达</label></span>
+							<span><input type="checkbox" id="configure10" name="configure" value="全自动空调 " /><label for="configure10">全自动空调 </label></span>
+							<span><input type="checkbox" id="configure11" name="configure" value="多功能方向盘" /><label for="configure11">多功能方向盘</label></span>
+							<span><input type="checkbox" id="configure12" name="configure" value="LED大灯" /><label for="configure12">LED大灯</label></span>
+							<span><input type="checkbox" id="configure13" name="configure" value="倒车影像" /><label for="configure13">倒车影像</label></span>
+							<span><input type="checkbox" id="configure14" name="configure" value="无钥匙启动" /><label for="configure14">无钥匙启动</label></span>
+							<span><input type="checkbox" id="configure15" name="configure" value="座椅加热" /><label for="configure15">座椅加热</label></span>
+							<span><input type="checkbox" id="configure16" name="configure" value="日间行车灯" /><label for="configure16">日间行车灯</label></span>
+							<span><input type="checkbox" id="configure17" name="configure" value="自动泊车" /><label for="configure17">自动泊车</label></span>
+							<span><input type="checkbox" id="configure1" name="configure" value="蓝牙/车载电话" /><label for="configure18">蓝牙/车载电话</label></span>		
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="choose" name="chooseBoxs" id="brand">
+					<div id="firstLetter">
+						<span class="firstLetter" id="hot">热门</span>
+						<span class="firstLetter" id="A">A</span>
+						<span class="firstLetter" id="B">B</span>
+						<span class="firstLetter" id="C">C</span>
+						<span class="firstLetter" id="D">D</span>
+						<span class="firstLetter" id="F">F</span>
+						<span class="firstLetter" id="G">G</span>
+						<span class="firstLetter" id="H">H</span>
+						<span class="firstLetter" id="I">I</span>
+						<span class="firstLetter" id="J">J</span>
+						<span class="firstLetter" id="K">K</span>
+						<span class="firstLetter" id="L">L</span>
+						<span class="firstLetter" id="M">M</span>
+						<span class="firstLetter" id="N">N</span>
+						<span class="firstLetter" id="O">O</span>
+						<span class="firstLetter" id="P">P</span>
+						<span class="firstLetter" id="Q">Q</span>
+						<span class="firstLetter" id="R">R</span>
+						<span class="firstLetter" id="S">S</span>
+						<span class="firstLetter" id="T">T</span>
+						<span class="firstLetter" id="V">V</span>
+						<span class="firstLetter" id="W">W</span>
+						<span class="firstLetter" id="X">X</span>
+						<span class="firstLetter" id="Y">Y</span>
+						<span class="firstLetter" id="Z">Z</span>
+					</div>
+					<div class="brandName" id="hotBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/A_3_hot.jpg" />奥迪</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/B_1_hot.jpg" />宝马</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/B_3_hot.jpg" />奔驰</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/B_4_hot.jpg" />本田</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/B_7_hot.jpg" />标志</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/B_6_hot.jpg" />别克</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/D_2_hot.jpg" />大众</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/F_2_hot.jpg" />福特</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/G_6_hot.jpg" />广汽丰田</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/H_2_hot.jpg" />哈弗</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/J_3_hot.jpg" />吉利</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/J_4_hot.jpg" />江淮</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/J_1_hot.jpg" />Jeep</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/L_6_hot.jpg" />林肯</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/L_7_hot.jpg" />路虎</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/K_1_hot.jpg" />凯迪拉克</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/Q_1_hot.jpg" />奇瑞</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/Q_4_hot.jpg" />起亚</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/R_7_hot.jpg" />日产</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/X_1_hot.jpg" />现代</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/X_2_hot.jpg" />雪佛兰</a>
+						</div>
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/C_4_hot.jpg" />长安</a>
+						</div>
+					</div>
+					<div class="brandName" id="ABrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/A_3_hot.jpg" />奥迪</a>
+						</div>
+					</div>
+					<div class="brandName" id="BBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/B_1_hot.jpg" />宝马</a>
+						</div>
+					</div>
+					<div class="brandName" id="CBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/C_4_hot.jpg" />长安</a>
+						</div>
+					</div>
+					<div class="brandName" id="DBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/D_2_hot.jpg" />大众</a>
+						</div>
+					</div>
+					<div class="brandName" id="FBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/F_2_hot.jpg" />福特</a>
+						</div>
+					</div>
+					<div class="brandName" id="GBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/G_6_hot.jpg" />广汽丰田</a>
+						</div>
+					</div>
+					<div class="brandName" id="HBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/H_4.jpg" />红旗</a>
+						</div>
+					</div>
+					<div class="brandName" id="IBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/I_1.jpg" />Icona</a>
+						</div>
+					</div>
+					<div class="brandName" id="JBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/J_1_hot.jpg" />Jeep</a>
+						</div>
+					</div>
+					<div class="brandName" id="KBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/K_1_hot.jpg" />凯迪拉克</a>
+						</div>
+					</div>
+					<div class="brandName" id="LBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/L_6_hot.jpg" />林肯</a>
+						</div>
+					</div>
+					<div class="brandName" id="MBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/M_2.jpg" />玛莎拉蒂</a>
+						</div>
+					</div>
+					<div class="brandName" id="NBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/N_1.jpg" />纳智捷</a>
+						</div>
+					</div>
+					<div class="brandName" id="OBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/O_1.jpg" />讴歌</a>
+						</div>
+					</div>
+					<div class="brandName" id="PBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/P_1.jpg" />帕加尼</a>
+						</div>
+					</div>
+					<div class="brandName" id="QBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/Q_1_hot.jpg" />奇瑞</a>
+						</div>
+					</div>
+					<div class="brandName" id="RBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/R_7_hot.jpg" />日产</a>
+						</div>
+					</div>
+					<div class="brandName" id="SBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/S_6.jpg" />斯柯达</a>
+						</div>
+					</div>
+					<div class="brandName" id="TBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/T_1.jpg" />特斯拉</a>
+						</div>
+					</div>
+					<div class="brandName" id="VBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/V_1.jpg" />VLF Automotive</a>
+						</div>
+					</div>
+					<div class="brandName" id="WBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/W_1.gif" />沃尔沃</a>
+						</div>
+					</div>
+					<div class="brandName" id="XBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/X_2_hot.jpg" />雪佛兰</a>
+						</div>
+					</div>
+					<div class="brandName" id="YBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/Y_1.jpg" />英菲尼迪</a>
+						</div>
+					</div>
+					<div class="brandName" id="ZBrand">
+						<div class="brandBtn">
+							<a href="#"><img src="img/brands/Z_1.jpg" />众泰</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="showSea clearfix">
+					<div class="motorcycle">
+						<a href="#"><img src="img/motorcycle/baoma4xi.jpg" alt="新BMW 4系双门轿跑车" title="新BMW 4系双门轿跑车" /></a>
+						<div class="carTitle">
+							<a href="#A">新BMW 4系双门轿跑车</a>
+						</div>
+						<div class="detail">
+							<a href="detail.html">配置价格</a>
+						</div>
+						<div class="detail">
+							<a href="../图库页/图库/图库.html"">图片视频</a>
+						</div>
+					</div>
+					<div class="motorcycle">
+						<a href="#"><img src="img/motorcycle/aodiA4.jpg" alt="一汽大众奥迪 奥迪A4L" title="一汽大众奥迪 奥迪A4L" /></a>
+						<div class="carTitle">
+							<a href="#">一汽大众奥迪 奥迪A4L</a>
+						</div>
+						<div class="detail">
+							<a href="#">配置价格</a>
+						</div>
+						<div class="detail">
+							<a href="#">图片视频</a>
+						</div>
+					</div>
+					<div class="motorcycle">
+						<a href="#"><img src="img/motorcycle/dazhongcc.jpg" alt="一汽 大众 CC" title="一汽 大众 CC" /></a>
+						<div class="carTitle">
+							<a href="#">一汽 大众 CC</a>
+						</div>
+						<div class="detail">
+							<a href="#">配置价格</a>
+						</div>
+						<div class="detail">
+							<a href="#">图片视频</a>
+						</div>
+					</div>
+					<div class="motorcycle">
+						<a href="#"><img src="img/motorcycle/leikesasiES.jpg" alt="全新雷克萨斯SE" title="全新雷克萨斯SE" /></a>
+						<div class="carTitle">
+							<a href="#">全新雷克萨斯SE</a>
+						</div>
+						<div class="detail">
+							<a href="#">配置价格</a>
+						</div>
+						<div class="detail">
+							<a href="#">图片视频</a>
+						</div>
+					</div>
+					<div class="motorcycle">
+						<a href="#"><img src="img/motorcycle/kaidilakeXTS.jpg" alt="凯迪拉克  XTS" title="凯迪拉克  XTS" /></a>
+						<div class="carTitle">
+							<a href="#">凯迪拉克 XTS</a>
+						</div>
+						<div class="detail">
+							<a href="#">配置价格</a>
+						</div>
+						<div class="detail">
+							<a href="#">图片视频</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- bottom开始  -->
+	 <div class="bottom">
+                             
+    
+		<div class="bot-l">
+            <ul class="botlink">
+            <li><a href="#">商家申请</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">加入我们</a></li>
+			<li><a href="#">帮助中心</a></li>
+			<li><a href="#">用户反馈</a></li>
+			</ul>
+            </div>
+
+			<div class="bot-r">
+            <img src="img/二维码.png"/>
+            </div>
+			<img src="img/line1.png" class="line1" />
+			<img src="img/line2.png" class="line2" />
+
+                <span class="friend">友情链接:</span>
+				<div class="hang1">                
+				<ul>
+                <li><a href="#">汽车之家</a></li>
+				<li><a href="#">北京车展</a></li>
+				<li><a href="#">广州车展</a></li>
+				<li><a href="#">成都车展</a></li>
+				<li><a href="#">平安保险</a></li>
+				<li><a href="#">凤凰汽车</a></li>
+				<li><a href="#">汽车之友</a></li>
+				<li><a href="#">新良汽车</a></li>
+				<li><a href="#">汽车探索网</a></li>
+				<li><a href="#">太平洋汽车</a></li>
+				<li><a href="#">中华汽车网</a></li>
+                </div>
+
+                <div class="hang2">
+				<li><a href="#">人民网汽车</a></li>
+				<li><a href="#">苹果园</a></li>
+				<li><a href="#">二手车之家</a></li>
+				<li><a href="#">爱卡汽车</a></li>
+				<li><a href="#">车城网</a></li>
+				<li><a href="#">网易汽车</a></li>
+				<li><a href="#">搜狐汽车</a></li>               
+				</ul>
+				</div>
+
+             
+             <div class="copy1"><p>Copyright@copy2015-2017 优选车ALL Rights Reserved版权所有 优选车(合肥)信息科技有限公司</p></div>
+             <div class="copy2"><p>皖ICP备15036207号-2 皖公安网备 31011402001229 皖通信管自贸 【2017】 4号 联系电话：0551-10106088</p></div>
+			 
+
+          </div>
+		
+<!-- bottom结束  -->		
+	</body>
+	
+	<script src="js/chooseMode.js"></script>
+	<script src="js/brandBox.js"></script>
+	<script src="js/chooses.js"></script>
+	<script src="js/chooseSelect.js"></script>
+</html>
